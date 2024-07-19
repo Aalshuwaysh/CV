@@ -4,6 +4,7 @@ body {
     background-color: #f8f9fa;
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 
 header {
@@ -39,12 +40,13 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #fd7e14;
 }
 
@@ -57,7 +59,8 @@ form label {
     margin-bottom: 0.5em;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 0.5em;
     border: 1px solid #ccc;
@@ -92,6 +95,16 @@ form button:hover {
     }
 }
 
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+    }
+
+    .navbar-toggler {
+        margin-bottom: 1em;
+    }
+}
+
 .profile-photo {
     display: block;
     margin: 0 auto;
@@ -108,6 +121,7 @@ form button:hover {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -116,5 +130,3 @@ form button:hover {
 .fadeIn {
     animation-name: fadeIn;
 }
-
-
